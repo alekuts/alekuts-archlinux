@@ -1,1 +1,1 @@
-git clone https://<pat>@github.com/..
+git clone https://(pat)@github.com/..
