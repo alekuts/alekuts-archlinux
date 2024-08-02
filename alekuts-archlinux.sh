@@ -1,7 +1,6 @@
 #!/bin/bash
 
 
-
 # Section 1
 fdisk -l
 
@@ -28,12 +27,10 @@ mkdir /mnt/home
 mount /dev/$disk$diskPart /mnt/home
 
 
-
 # Section 2
 while ! pacstrap -K --noconfirm /mnt base linux linux-firmware ; do : ; done
 
 genfstab /mnt -U >> /mnt/etc/fstab
-
 
 
 # Section 3
@@ -48,7 +45,6 @@ $root sed -Ei 's/#(\[multilib\])/\1/' /etc/pacman.conf
 $root sed -i '/\[multilib\]/ {n;s/#//}' /etc/pacman.conf
 
 $root while ! pacman -Syu --noconfirm dhcpcd sudo grub efibootmgr xorg xorg-xinit noto-fonts noto-fonts-emoji noto-fonts-cjk font-manager pulseaudio pulseaudio-alsa alsa-utils fuse2 libmtp gvfs-mtp thunar flameshot git steam wine wine-mono wine-gecko nvidia ; do : ; done
-
 
 
 # Section 4
@@ -86,6 +82,8 @@ $root EDITOR=nvim
 
 $root sed -Ei 's/# (%wheel ALL.*ALL\) ALL)/\1/' /etc/sudoers
 
+
+# Section 5
 $root mkdir /boot/EFI
 
 $root diskPart=1
