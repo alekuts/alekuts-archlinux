@@ -81,7 +81,7 @@ $root echo "archlinux" > /etc/hostname
 
 $root echo "127.0.0.1 localhost
 ::1 localhost
-127.0.1.1 archlinux.localdomain archlinux"
+127.0.1.1 archlinux.localdomain archlinux" > /etc/hosts
 
 $root printf "3556588\n3556588" | passwd
 
@@ -91,7 +91,7 @@ $root printf "3556588\n3556588" | passwd alekuts
 
 $root usermod -aG wheel alekuts
 
-$root EDITOR=nvim
+$root export EDITOR=nvim
 
 $root sed -Ei 's/# (%wheel ALL.*ALL\) ALL)/\1/' /etc/sudoers
 
@@ -100,7 +100,7 @@ $root sed -Ei 's/# (%wheel ALL.*ALL\) ALL)/\1/' /etc/sudoers
 # GRUB
 $root mkdir /boot/EFI
 
-$root diskPart=1
+diskPart=1
 
 $root mount /dev/$disk$diskPart /boot/EFI
 
