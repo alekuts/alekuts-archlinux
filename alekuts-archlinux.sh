@@ -15,7 +15,7 @@ mkfs.fat -F32 /dev/$disk$diskPart
 
 diskPart=2
 
-mkfs.ext4 /dev/$disk$dp
+mkfs.ext4 /dev/$disk$diskPart
 
 mount /dev/$disk$diskPart /mnt
 
@@ -30,7 +30,7 @@ mount /dev/$disk$diskPart /mnt/home
 
 
 # Kernel and system
-while ! pacstrap -K --noconfirm /mnt base linux linux-firmware ; do : ; done
+while ! pacstrap -K /mnt base linux linux-firmware ; do : ; done
 
 genfstab /mnt -U >> /mnt/etc/fstab
 
