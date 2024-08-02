@@ -5,7 +5,7 @@
 # Disk
 fdisk -l
 
-read $disk
+read disk
 
 echo -e "g\nn\n\n\n+1G\nt\n1\nn\n\n\n+100G\nn\n\n\n\nw\nq" | fdisk -W always /dev/$disk
 
