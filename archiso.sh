@@ -37,6 +37,8 @@ genfstab /mnt -U >> /mnt/etc/fstab
 
 
 # Change root
+cd
+
 cp alekuts-archlinux/arch-chroot.sh /mnt
 
 arch-chroot /mnt bash arch-chroot.sh
