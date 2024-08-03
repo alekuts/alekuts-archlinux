@@ -83,11 +83,11 @@ echo "127.0.0.1 localhost
 ::1 localhost
 127.0.1.1 archlinux.localdomain archlinux" > /mnt/etc/hosts
 
-$root printf "3556588\n3556588" | passwd
+$root echo -e "3556588\n3556588" | passwd
 
 $root useradd -m alekuts
 
-$root printf "3556588\n3556588" | passwd alekuts
+$root echo -e "3556588\n3556588" | passwd alekuts
 
 $root usermod -aG wheel alekuts
 
