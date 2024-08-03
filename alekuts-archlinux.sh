@@ -46,9 +46,9 @@ $root pacman-key --init
 
 $root pacman-key --populate
 
-$root sed -Ei 's/#(\[multilib\])/\1/' /etc/pacman.conf
+sed -Ei 's/#(\[multilib\])/\1/' /mnt/etc/pacman.conf
 
-$root sed -i '/\[multilib\]/ {n;s/#//}' /etc/pacman.conf
+sed -i '/\[multilib\]/ {n;s/#//}' /mnt/etc/pacman.conf
 
 while ! $root pacman -Syu --noconfirm dhcpcd sudo grub efibootmgr xorg xorg-xinit noto-fonts noto-fonts-emoji noto-fonts-cjk font-manager pulseaudio pulseaudio-alsa alsa-utils fuse2 libmtp gvfs-mtp thunar flameshot git steam wine wine-mono wine-gecko nvidia ; do : ; done
 
@@ -64,24 +64,24 @@ $root hwclock --systohc
 
 
 # Locale
-$root sed -Ei 's/#(de_DE.*UTF-8)/\1/' /etc/locale.gen
+sed -Ei 's/#(de_DE.*UTF-8)/\1/' /mnt/etc/locale.gen
 
-$root sed -Ei 's/#(en_US.*UTF-8)/\1/' /etc/locale.gen
+sed -Ei 's/#(en_US.*UTF-8)/\1/' /mnt/etc/locale.gen
 
-$root sed -Ei 's/#(ja_JP.*UTF-8)/\1/' /etc/locale.gen
+sed -Ei 's/#(ja_JP.*UTF-8)/\1/' /mnt/etc/locale.gen
 
-$root sed -Ei 's/#(uk_UA.*UTF-8)/\1/' /etc/locale.gen
+sed -Ei 's/#(uk_UA.*UTF-8)/\1/' /mnt/etc/locale.gen
 
 $root locale-gen
 
 
 
 # Computer and user name
-$root echo "archlinux" > /etc/hostname
+echo "archlinux" > /mnt/etc/hostname
 
-$root echo "127.0.0.1 localhost
+echo "127.0.0.1 localhost
 ::1 localhost
-127.0.1.1 archlinux.localdomain archlinux" > /etc/hosts
+127.0.1.1 archlinux.localdomain archlinux" > /mnt/etc/hosts
 
 $root printf "3556588\n3556588" | passwd
 
@@ -93,7 +93,7 @@ $root usermod -aG wheel alekuts
 
 $root export EDITOR=nvim
 
-$root sed -Ei 's/# (%wheel ALL.*ALL\) ALL)/\1/' /etc/sudoers
+sed -Ei 's/# (%wheel ALL.*ALL\) ALL)/\1/' /mnt/etc/sudoers
 
 
 
@@ -111,7 +111,7 @@ $root grub-mkconfig -o /boot/grub/grub.cfg
 
 
 # Xinit config
-$root echo "xrandr --output DP-0 --mode 1920x1080 --rate 165" > .xinitrc
+echo "xrandr --output DP-0 --mode 1920x1080 --rate 165" > /mnt/.xinitrc
 
 
 
