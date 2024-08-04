@@ -37,8 +37,17 @@ genfstab /mnt -U >> /mnt/etc/fstab
 
 
 # Change root
-cd
+echo "disk=$disk" > disk
+
+cp alekuts-archlinux/disk /mnt
 
 cp alekuts-archlinux/arch-chroot.sh /mnt
 
 arch-chroot /mnt bash arch-chroot.sh
+
+
+
+# Unmount and reboot
+umount /mnt -l
+
+reboot

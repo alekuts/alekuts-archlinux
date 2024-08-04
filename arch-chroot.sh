@@ -61,6 +61,8 @@ sed -Ei 's/# (%wheel ALL.*ALL\) ALL)/\1/' /etc/sudoers
 # GRUB
 mkdir /boot/EFI
 
+source disk
+
 diskPart=1
 
 mount /dev/$disk$diskPart /boot/EFI
@@ -73,10 +75,3 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 # Xinit config
 echo "xrandr --output DP-0 --mode 1920x1080 --rate 165" > .xinitrc
-
-
-
-# Unmount and reboot
-umount /mnt -l
-
-reboot
