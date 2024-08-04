@@ -75,3 +75,8 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 # Xinit config
 echo "xrandr --output DP-0 --mode 1920x1080 --rate 165" > .xinitrc
+
+
+
+# Exit from chroot
+exit
