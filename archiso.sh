@@ -37,7 +37,9 @@ genfstab /mnt -U >> /mnt/etc/fstab
 
 
 # Change root
-echo "disk=$disk" > disk
+cd
+
+echo "disk=$disk" > alekuts-archlinux/disk
 
 cp alekuts-archlinux/disk /mnt
 
