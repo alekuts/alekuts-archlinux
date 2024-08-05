@@ -11,7 +11,7 @@ sed -Ei 's/#(\[multilib\])/\1/' /etc/pacman.conf
 
 sed -i '/\[multilib\]/ {n;s/#//}' /etc/pacman.conf
 
-while ! pacman -Syu --noconfirm dhcpcd sudo neovim grub efibootmgr xorg xorg-xinit noto-fonts noto-fonts-emoji noto-fonts-cjk font-manager pulseaudio pulseaudio-alsa alsa-utils fuse2 libmtp gvfs-mtp thunar flameshot git steam wine wine-mono wine-gecko nvidia ; do : ; done
+while ! pacman -Syu --noconfirm dhcpcd sudo neovim grub efibootmgr xorg xorg-xinit noto-fonts noto-fonts-emoji noto-fonts-cjk font-manager pulseaudio pulseaudio-alsa alsa-utils fuse2 libmtp gvfs-mtp thunar flameshot git steam wine wine-mono wine-gecko nvidia nvidia-settings ; do : ; done
 
 
 
