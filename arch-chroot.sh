@@ -65,7 +65,7 @@ source disk
 
 diskPart=1
 
-mount /dev/$disk$diskPart /boot/EFI
+mount /dev/$disk$diskW$diskPart /boot/EFI
 
 grub-install --target=x86_64-efi --efi-directory=/boot/EFI
 
