@@ -3,7 +3,7 @@
 
 
 # Software
-while ! pacman -Syu --noconfirm xorg xorg-xinit noto-fonts noto-fonts-emoji noto-fonts-cjk pulseaudio pulseaudio-alsa alsa-utils fuse2 libmtp gvfs-mtp thunar flameshot git steam wine wine-mono wine-gecko nvidia nvidia-settings ; do : ; done
+while ! pacman -Syu --noconfirm xorg xorg-xinit noto-fonts noto-fonts-emoji noto-fonts-cjk pulseaudio pulseaudio-alsa alsa-utils fuse2 libmtp gvfs-mtp thunar flameshot firefox zip git steam wine wine-mono wine-gecko nvidia-settings ; do : ; done
 
 
 
