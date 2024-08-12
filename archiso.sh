@@ -41,6 +41,7 @@ printf "disk=$disk\ndiskPart=$diskPart" > alekuts-archlinux/variables
 
 cp alekuts-archlinux/variables /mnt
 cp alekuts-archlinux/arch-chroot.sh /mnt
+cp alekuts-archlinux/arch-post-install.sh /mnt
 
 arch-chroot /mnt bash arch-chroot.sh
 
