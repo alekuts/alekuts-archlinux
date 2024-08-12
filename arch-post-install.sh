@@ -20,7 +20,7 @@ printf "xrandr --output DP-0 --mode 1920x1080 --rate 165 &\nexec startxfce4" > /
 # Config files
 cd /home/alekuts
 
-git clone https://github.com/AleKutS/alekuts-archlinux
+while ! git clone https://github.com/AleKutS/alekuts-archlinux ; do : ; done
 
 cd alekuts-archlinux
 
@@ -29,6 +29,7 @@ unzip .config.zip -d /home/alekuts/
 cd ..
 
 rm -rf alekuts-archlinux
+
 
 
 # Exit from arch-chroot
