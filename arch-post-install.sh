@@ -3,7 +3,7 @@
 
 
 # Software
-while ! pacman -Syu --noconfirm xorg xorg-xinit noto-fonts noto-fonts-emoji noto-fonts-cjk pulseaudio pulseaudio-alsa alsa-utils fuse2 libmtp gvfs-mtp thunar thunar-archive-plugin xarchiver flameshot firefox git steam wine wine-mono wine-gecko xfce4 xfce4-goodies rofi ; do : ; done
+while ! pacman -Syu --noconfirm xorg xorg-xinit noto-fonts noto-fonts-emoji noto-fonts-cjk pulseaudio pulseaudio-alsa alsa-utils fuse2 libmtp gvfs-mtp thunar thunar-archive-plugin xarchiver unzip flameshot firefox git steam wine wine-mono wine-gecko xfce4 xfce4-goodies rofi ; do : ; done
 
 
 
@@ -24,7 +24,7 @@ git clone https://github.com/AleKutS/alekuts-archlinux
 
 cd alekuts-archlinux
 
-xarchiver --extract-to=/home/alekuts/.config
+unzip .config.zip -d /home/alekuts/
 
 cd ..
 
