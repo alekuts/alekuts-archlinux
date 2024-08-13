@@ -25,5 +25,6 @@ exec startxfce4" > .xinitrc
 while ! git clone https://github.com/AleKutS/alekuts-archlinux ; do : ; done
 
 mv alekuts-archlinux/.config /home/alekuts/
+mv alekuts-archlinux/.themes /home/alekuts/
 
 rm -rf alekuts-archlinux arch-post-install.sh
