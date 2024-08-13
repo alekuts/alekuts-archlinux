@@ -65,5 +65,9 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 
 
-# Post installation script
-bash arch-post-install.sh
+# Moving post install script to user directory
+mv arch-post-install.sh /home/alekuts/
+
+
+# Delete script files
+rm -rf arch-chroot.sh variables
