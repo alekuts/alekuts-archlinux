@@ -2,6 +2,10 @@
 
 
 
+source variables
+
+
+
 # Keys, multilib and software
 pacman-key --init
 pacman-key --populate
@@ -39,11 +43,11 @@ printf "127.0.0.1 localhost
 ::1 localhost
 127.0.1.1 archlinux.localdomain archlinux" > /etc/hosts
 
-printf "3556588\n3556588" | passwd
+printf "$password\n$password" | passwd
 
 useradd -m alekuts
 
-printf "3556588\n3556588" | passwd alekuts
+printf "$password\n$password" | passwd alekuts
 
 usermod -aG wheel alekuts
 
@@ -53,8 +57,6 @@ sed -Ei 's/# (%wheel ALL.*ALL\) ALL)/\1/' /etc/sudoers
 
 # GRUB
 mkdir /boot/EFI
-
-source variables
 
 partNum=1
 mount /dev/$disk$diskPart$partNum /boot/EFI

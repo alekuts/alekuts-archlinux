@@ -2,10 +2,20 @@
 
 
 
+clear
+
+
+
+# User password
+printf "Password: "
+read -s password
+
+
+
 # Disk
 fdisk -l
 
-printf "Disk: "
+printf "\nDisk: "
 read disk
 
 printf "Disk part name without number: "
@@ -37,7 +47,7 @@ genfstab /mnt -U >> /mnt/etc/fstab
 # Change root
 cd
 
-printf "disk=$disk\ndiskPart=$diskPart" > alekuts-archlinux/variables
+printf "disk=$disk\ndiskPart=$diskPart\npassword=$password" > alekuts-archlinux/variables
 
 mv alekuts-archlinux/variables /mnt
 mv alekuts-archlinux/arch-chroot.sh /mnt
