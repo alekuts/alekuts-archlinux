@@ -71,5 +71,5 @@ grub-mkconfig -o /boot/grub/grub.cfg
 mv arch-post-install.sh /home/alekuts/
 
 
-# Delete script files
+# Self-delete
 rm -rf arch-chroot.sh variables
