@@ -10,19 +10,14 @@ printf "\n\n" | pacman -Sc --noconfirm
 
 
 
-# Xinit
+# Config files
 cd
 
-printf "xrandr --output DP-0 --mode 1920x1080 --rate 165 &
-exec startxfce4" > .xinitrc
-
-
-
-# Config files
 while ! git clone https://github.com/AleKutS/alekuts-archlinux ; do : ; done
 
 mv alekuts-archlinux/.config /home/alekuts/
 mv alekuts-archlinux/.themes /home/alekuts/
+mv alekuts-archlinux/.xinitrc /home/alekuts/
 
 
 
