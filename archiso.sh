@@ -2,7 +2,6 @@
 
 
 
-# Clear CLI
 clear
 
 
