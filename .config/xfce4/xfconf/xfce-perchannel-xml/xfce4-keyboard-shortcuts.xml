@@ -45,6 +45,7 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;r" type="string" value="xrandr --output DP-0 --rotate right"/>
       <property name="&lt;Super&gt;Print" type="string" value="flameshot gui"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;d" type="string" value="firefox https://discord.com/channels/@me"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;g" type="string" value="firefox https://github.com/AleKutS/alekuts-archlinux"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

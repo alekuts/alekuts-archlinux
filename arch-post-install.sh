@@ -5,9 +5,6 @@
 # Software
 while ! sudo pacman -Syu --noconfirm xorg xorg-xinit noto-fonts noto-fonts-emoji noto-fonts-cjk pulseaudio pulseaudio-alsa alsa-utils fuse2 libmtp gvfs-mtp thunar thunar-archive-plugin xarchiver flameshot firefox git steam wine wine-mono wine-gecko xfce4 xfce4-goodies lxappearance rofi nvidia nvidia-settings ; do : ; done
 
-sudo pacman -Rns --noconfirm xfce4-terminal xfce4-screenshooter
-printf "\n\n" | pacman -Sc --noconfirm
-
 
 
 # Config files
@@ -23,8 +20,7 @@ mv alekuts-archlinux/.xinitrc /home/alekuts/
 
 # Delete unnecessary software
 sudo pacman -Rns --noconfirm xfce4-terminal xfce4-screenshooter
-
-printf "\n\n" | pacman -Sc --noconfirm
+sudo pacman -Sc --noconfirm
 
 
 
