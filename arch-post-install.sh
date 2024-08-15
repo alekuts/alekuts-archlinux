@@ -3,7 +3,7 @@
 
 
 # Software
-while ! sudo pacman -Syu --noconfirm xorg xorg-xinit noto-fonts noto-fonts-emoji noto-fonts-cjk pulseaudio pulseaudio-alsa alsa-utils fuse2 libmtp gvfs-mtp thunar thunar-archive-plugin xarchiver flameshot firefox git steam wine wine-mono wine-gecko xfce4 xfce4-goodies lxappearance rofi nvidia nvidia-settings ; do : ; done
+while ! sudo pacman -Syu --noconfirm base-devel xorg xorg-xinit noto-fonts noto-fonts-emoji noto-fonts-cjk pulseaudio pulseaudio-alsa alsa-utils fuse2 libmtp gvfs-mtp thunar thunar-archive-plugin xarchiver flameshot firefox git steam wine wine-mono wine-gecko xfce4 xfce4-goodies lxappearance rofi nvidia nvidia-settings ; do : ; done
 
 
 
