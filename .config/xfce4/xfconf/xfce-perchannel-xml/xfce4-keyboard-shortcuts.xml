@@ -36,7 +36,6 @@
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Super&gt;Return" type="string" value="kitty"/>
       <property name="&lt;Super&gt;Tab" type="string" value="rofi -show run"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;u" type="string" value="wine /home/alekuts/usc/usc-game.exe"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;Up" type="string" value="amixer set &apos;Master&apos; 3%+"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;Down" type="string" value="amixer set &apos;Master&apos; 3%-"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;b" type="string" value="firefox"/>
@@ -46,6 +45,11 @@
       <property name="&lt;Super&gt;Print" type="string" value="flameshot gui"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;d" type="string" value="firefox https://discord.com/channels/@me"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;g" type="string" value="firefox https://github.com/AleKutS/alekuts-archlinux"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;a" type="string" value="firefox https://aur.archlinux.org/"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;s" type="string" value="/home/alekuts/unnamed-sdvx-clone/bin/usc-game"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;j" type="string" value="thunar /home/alekuts/jjbaasbr/ASBR.exe"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;l" type="string" value="/home/alekuts/fightcade/Fightcade2.sh"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;e" type="string" value="easyeffects"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

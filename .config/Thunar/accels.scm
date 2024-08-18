@@ -82,6 +82,7 @@
 ; (gtk_accel_path "<Actions>/ThunarStandardView/toggle-sort-order" "")
 ; (gtk_accel_path "<Actions>/ThunarActionManager/open-in-new-window" "<Primary><Shift>o")
 ; (gtk_accel_path "<Actions>/ThunarWindow/view-configure-toolbar" "")
+; (gtk_accel_path "<Actions>/ThunarBookmarks/0c6df98ae2424334986a3450738f1a8b" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/view-location-selector-menu" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/view-statusbar" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/close-all-windows" "<Primary><Shift>w")

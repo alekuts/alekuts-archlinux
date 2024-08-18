@@ -23,6 +23,7 @@
       <property name="enable-struts" type="bool" value="true"/>
       <property name="autohide-behavior" type="uint" value="1"/>
       <property name="plugin-ids" type="array">
+        <value type="int" value="3"/>
         <value type="int" value="12"/>
         <value type="int" value="14"/>
         <value type="int" value="11"/>
@@ -73,6 +74,9 @@
       <property name="known-items" type="array">
         <value type="string" value="flameshot"/>
       </property>
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="fc2-electron"/>
+      </property>
     </property>
     <property name="plugin-12" type="string" value="systemload">
       <property name="swap" type="empty">
@@ -108,6 +112,9 @@
     </property>
     <property name="plugin-14" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-3" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
     </property>
   </property>
 </channel>
