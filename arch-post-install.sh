@@ -30,4 +30,4 @@ sudo pacman -Sc --noconfirm
 
 
 # Self-delete
-rm -rf alekuts-archlinux arch-post-install.sh
+rm -rf arch-post-install.sh
