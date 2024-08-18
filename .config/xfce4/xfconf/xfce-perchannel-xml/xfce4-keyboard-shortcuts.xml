@@ -50,6 +50,7 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;j" type="string" value="thunar /home/alekuts/jjbaasbr/ASBR.exe"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;l" type="string" value="/home/alekuts/fightcade/Fightcade2.sh"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;e" type="string" value="easyeffects"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;t" type="string" value="telegram-desktop"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
