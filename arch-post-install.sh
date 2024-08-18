@@ -18,6 +18,11 @@ mv alekuts-archlinux/.xinitrc /home/alekuts/
 
 
 
+# Load easyeffects preset
+easyeffects -l main
+
+
+
 # Delete unnecessary software
 sudo pacman -Rns --noconfirm xfce4-terminal xfce4-screenshooter
 sudo pacman -Sc --noconfirm
