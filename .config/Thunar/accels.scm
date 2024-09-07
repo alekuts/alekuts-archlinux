@@ -1,4 +1,4 @@
-; thunar GtkAccelMap rc-file         -*- scheme -*-
+; Thunar GtkAccelMap rc-file         -*- scheme -*-
 ; this file is an automated accelerator map dump
 ;
 ; (gtk_accel_path "<Actions>/ThunarActionManager/restore" "")
@@ -50,7 +50,7 @@
 ; (gtk_accel_path "<Actions>/ThunarWindow/cancel-search" "Escape")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/select-by-pattern" "<Primary>s")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/rename" "F2")
-; (gtk_accel_path "<Actions>/ThunarStandardView/configure-columns" "")
+; (gtk_accel_path "<Actions>/ThunarBookmarks/576902e32a07b7a130a70bafafae6f1f" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/create-document" "")
 ; (gtk_accel_path "<Actions>/ThunarShortcutsPane/sendto-shortcuts" "<Primary>d")
 ; (gtk_accel_path "<Actions>/ThunarActionManager/move-to-trash" "")
@@ -111,6 +111,7 @@
 ; (gtk_accel_path "<Actions>/ThunarWindow/go-menu" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/sort-by-size" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/arrange-items-menu" "")
+; (gtk_accel_path "<Actions>/ThunarBookmarks/590fb9fb40b64b1a1d059a5784f7d955" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/show-hidden" "<Primary>h")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/sort-by-name" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/zoom-reset" "<Primary>0")

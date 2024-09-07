@@ -46,11 +46,12 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;d" type="string" value="firefox https://discord.com/channels/@me"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;g" type="string" value="firefox https://github.com/AleKutS/alekuts-archlinux"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;a" type="string" value="firefox https://aur.archlinux.org/"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;s" type="string" value="/home/alekuts/unnamed-sdvx-clone/bin/usc-game"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;j" type="string" value="thunar /home/alekuts/jjbaasbr/ASBR.exe"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;l" type="string" value="/home/alekuts/fightcade/Fightcade2.sh"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;e" type="string" value="easyeffects"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;t" type="string" value="telegram-desktop"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;Shift_R" type="string" value="steam"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;s" type="string" value="/home/alekuts/unnamed-sdvx-clone/src/unnamed-sdvx-clone/bin/usc-game"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
