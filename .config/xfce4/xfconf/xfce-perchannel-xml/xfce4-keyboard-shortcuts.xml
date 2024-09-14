@@ -43,7 +43,6 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;n" type="string" value="xrandr --output DP-0 --rotate normal"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;r" type="string" value="xrandr --output DP-0 --rotate right"/>
       <property name="&lt;Super&gt;Print" type="string" value="flameshot gui"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;d" type="string" value="firefox https://discord.com/channels/@me"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;g" type="string" value="firefox https://github.com/AleKutS/alekuts-archlinux"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;a" type="string" value="firefox https://aur.archlinux.org/"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;j" type="string" value="thunar /home/alekuts/jjbaasbr/ASBR.exe"/>
@@ -52,6 +51,7 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;t" type="string" value="telegram-desktop"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;Shift_R" type="string" value="steam"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;s" type="string" value="/home/alekuts/unnamed-sdvx-clone/src/unnamed-sdvx-clone/bin/usc-game"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;d" type="string" value="discord"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
@@ -136,6 +136,7 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;at" type="string" value="move_window_workspace_2_key"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;numbersign" type="string" value="move_window_workspace_3_key"/>
       <property name="&lt;Primary&gt;Tab" type="string" value="show_desktop_key"/>
+      <property name="&lt;Alt&gt;Right" type="string" value="popup_menu_key"/>
     </property>
   </property>
   <property name="providers" type="array">

@@ -72,11 +72,13 @@
     <property name="plugin-9" type="string" value="netload"/>
     <property name="plugin-11" type="string" value="systray">
       <property name="known-items" type="array">
+        <value type="string" value="chrome_status_icon_1"/>
         <value type="string" value="steam"/>
         <value type="string" value="TelegramDesktop"/>
         <value type="string" value="flameshot"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="skypeforlinux"/>
         <value type="string" value="fc2-electron"/>
       </property>
     </property>

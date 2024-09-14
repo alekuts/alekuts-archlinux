@@ -5,5 +5,5 @@ x-scheme-handler/tonsite=org.telegram.desktop.desktop
 
 [Added Associations]
 x-scheme-handler/tonsite=org.telegram.desktop.desktop;
-application/x-msdownload=steam.desktop;
+application/x-msdownload=wine.desktop;steam.desktop;
 inode/directory=steam.desktop;
