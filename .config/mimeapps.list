@@ -1,0 +1,35 @@
+[Default Applications]
+x-scheme-handler/discord=vesktop.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-DPAZM3.desktop
+x-scheme-handler/tonsite=userapp-Telegram Desktop-93JYM3.desktop
+x-scheme-handler/http=userapp-Zen-T46ZM3.desktop
+x-scheme-handler/https=userapp-Zen-T46ZM3.desktop
+x-scheme-handler/chrome=userapp-Zen-T46ZM3.desktop
+text/html=userapp-Zen-T46ZM3.desktop
+application/x-extension-htm=userapp-Zen-T46ZM3.desktop
+application/x-extension-html=userapp-Zen-T46ZM3.desktop
+application/x-extension-shtml=userapp-Zen-T46ZM3.desktop
+application/xhtml+xml=userapp-Zen-T46ZM3.desktop
+application/x-extension-xhtml=userapp-Zen-T46ZM3.desktop
+application/x-extension-xht=userapp-Zen-T46ZM3.desktop
+x-scheme-handler/discord-514489760568573952=discord-514489760568573952.desktop
+application/vnd.microsoft.portable-executable=userapp-wine-vanilla-11.0-8XMQN3.desktop
+
+[Added Associations]
+x-scheme-handler/tg=userapp-Telegram Desktop-DPAZM3.desktop;
+x-scheme-handler/tonsite=userapp-Telegram Desktop-93JYM3.desktop;
+x-scheme-handler/http=userapp-Zen-T46ZM3.desktop;
+x-scheme-handler/https=userapp-Zen-T46ZM3.desktop;
+x-scheme-handler/chrome=userapp-Zen-T46ZM3.desktop;
+text/html=userapp-Zen-T46ZM3.desktop;
+application/x-extension-htm=userapp-Zen-T46ZM3.desktop;
+application/x-extension-html=userapp-Zen-T46ZM3.desktop;
+application/x-extension-shtml=userapp-Zen-T46ZM3.desktop;
+application/xhtml+xml=userapp-Zen-T46ZM3.desktop;
+application/x-extension-xhtml=userapp-Zen-T46ZM3.desktop;
+application/x-extension-xht=userapp-Zen-T46ZM3.desktop;
+text/plain=org.xfce.mousepad.desktop;
+application/xml=org.xfce.mousepad.desktop;
+text/x-csrc=org.xfce.mousepad.desktop;
+application/vnd.microsoft.portable-executable=userapp-wine-vanilla-11.0-8XMQN3.desktop;userapp-wine-03HAN3.desktop;userapp-wine-N99JN3.desktop;userapp-wine-vanilla-R7GFN3.desktop;wine-Programs-School Days HQ-School Days HQ Russian.desktop;wine-extension-msp.desktop;wine-browsedrive.desktop;
+application/x-shellscript=dev.zed.Zed.desktop;
