@@ -27,9 +27,9 @@ cat <<EOF > /etc/hosts
 127.0.1.1 archlinux.localdomain archlinux
 EOF
 
-printf "$PASSWORD\n$PASSWORD\n" | passwd
+echo "root:$PASSWORD" | chpasswd
 useradd -m -G wheel alekuts
-printf "$PASSWORD\n$PASSWORD\n" | passwd alekuts
+echo "alekuts:$PASSWORD" | chpasswd
 sed -Ei 's/# (%wheel ALL.*ALL\) ALL)/\1/' /etc/sudoers
 
 printf "zram\n" > /etc/modules-load.d/zram.conf

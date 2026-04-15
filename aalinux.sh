@@ -58,7 +58,7 @@ cd
 mv alekuts-archlinux/chrootaalinux.sh /mnt
 mv alekuts-archlinux/postaalinux.sh /mnt
 
-arch-chroot /mnt bash chrootaalinux.sh
+arch-chroot /mnt bash alekuts-archlinux/chrootaalinux.sh
 
 umount /mnt -l
 reboot
