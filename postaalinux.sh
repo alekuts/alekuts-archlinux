@@ -14,6 +14,7 @@ mv alekuts-archlinux/.themes /home/alekuts/
 mv alekuts-archlinux/.icons /home/alekuts/
 mv alekuts-archlinux/.xinitrc /home/alekuts/
 mv alekuts-archlinux/.vst3 /home/alekuts/
+mv alekuts-archlinux/wallpapers /home/alekuts/
 
 rm postaalinux.sh
 reboot
