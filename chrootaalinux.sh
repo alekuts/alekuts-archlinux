@@ -7,7 +7,7 @@ while ! (pacman-key --init && pacman-key --populate) ; do sleep 1 ; done
 sed -Ei 's/#(\[multilib\])/\1/' /etc/pacman.conf
 sed -i '/\[multilib\]/ {n;s/#//}' /etc/pacman.conf
 
-while ! pacman -Syu --noconfirm networkmanager sudo neovim grub efibootmgr ; do sleep 1 ; done
+while ! pacman -Syu --noconfirm networkmanager sudo neovim grub efibootmgr btrfs-progs ; do sleep 1 ; done
 
 systemctl enable NetworkManager.service
 
