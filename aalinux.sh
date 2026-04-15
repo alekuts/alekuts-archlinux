@@ -54,6 +54,7 @@ mount $EFI_PART /mnt/efi
 
 while ! pacstrap -K /mnt base linux linux-firmware ; do sleep 1 ; done
 genfstab -U /mnt >> /mnt/etc/fstab
+sed -i 's/subvol=/compress=zstd:1,subvol=/g' /mnt/etc/fstab
 
 cd
 mv variables /mnt
