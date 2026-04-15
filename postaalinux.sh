@@ -11,12 +11,13 @@ yay -S zen-browser-bin vesktop-bin awesome-git
 
 git clone https://github.com/alekuts/alekuts-archlinux
 
-cp -rf alekuts-archlinux/.config/. /home/alekuts/.config/
-mv alekuts-archlinux/.themes /home/alekuts/
-mv alekuts-archlinux/.icons /home/alekuts/
-mv alekuts-archlinux/.xinitrc /home/alekuts/
-mv alekuts-archlinux/.vst3 /home/alekuts/
-mv alekuts-archlinux/wallpapers /home/alekuts/
+cp -rf ~/alekuts-archlinux/.config/. /home/alekuts/.config/
+cp -f ~/alekuts-archlinux/.bashrc ~/.bashrc
+cp -f ~/alekuts-archlinux/.xinitrc /home/alekuts/
+mv ~/alekuts-archlinux/.themes /home/alekuts/
+mv ~/alekuts-archlinux/.icons /home/alekuts/
+mv ~/alekuts-archlinux/.vst3 /home/alekuts/
+mv ~/alekuts-archlinux/wallpapers /home/alekuts/
 
-rm postaalinux.sh
+rm -f postaalinux.sh
 reboot
