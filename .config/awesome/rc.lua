@@ -234,14 +234,14 @@ awful.mouse.append_global_mousebindings({
 
 -- General Awesome keys
 awful.keyboard.append_global_keybindings({
-       awful.key({ modkey, "Shift" }, "r", function ()
-           awful.spawn.with_shell("xrandr --output DP-0 --mode 1920x1080 --rate 119.93 --rotate right")
-       end,
-       {description = "Rotate monitor right (vertical)", group = "screen"}),
-       awful.key({ modkey, "Shift" }, "n", function ()
-           awful.spawn.with_shell("xrandr --output DP-0 --mode 1920x1080 --rate 119.93 --rotate normal")
-       end,
-       {description = "Reset monitor rotation", group = "screen"}),
+    awful.key({ modkey, "Shift" }, "r", function()
+            awful.spawn.with_shell("xrandr --output DP-0 --mode 1920x1080 --rate 119.93 --rotate right")
+        end,
+        { description = "Rotate monitor right (vertical)", group = "screen" }),
+    awful.key({ modkey, "Shift" }, "n", function()
+            awful.spawn.with_shell("xrandr --output DP-0 --mode 1920x1080 --rate 119.93 --rotate normal")
+        end,
+        { description = "Reset monitor rotation", group = "screen" }),
     awful.key({ modkey }, "space", function() toggle_layout() end,
         { description = "lang", group = "keyboard" }),
     awful.key({ modkey, }, "s", hotkeys_popup.show_help,
@@ -454,12 +454,12 @@ client.connect_signal("request::default_keybindings", function()
         --    c.minimized = true
         -- end ,
         -- {description = "minimize", group = "client"}),
-        --        awful.key({ modkey,           }, "m",
-        --            function (c)
-        --                c.maximized = not c.maximized
-        --                c:raise()
-        --            end ,
-        --            {description = "(un)maximize", group = "client"}),
+        awful.key({ modkey, }, "m",
+            function(c)
+                c.maximized = not c.maximized
+                c:raise()
+            end,
+            { description = "(un)maximize", group = "client" }),
         --        awful.key({ modkey, "Control" }, "m",
         --            function (c)
         --                c.maximized_vertical = not c.maximized_vertical
