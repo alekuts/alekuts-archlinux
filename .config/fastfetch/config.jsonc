@@ -1,13 +1,13 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
-   "logo": {
-        "type": "kitty",
-        "source": "$HOME/.config/fastfetch/gentu.png",
-        "width": 30,
-        "padding": {
-		"left": 5
-	}
+  "logo": {
+    "type": "kitty",
+    "source": "$HOME/.config/fastfetch/arch.png",
+    "width": 30,
+    "padding": {
+      "left": 5,
     },
+  },
   "modules": [
     "title",
     "separator",
@@ -37,6 +37,6 @@
     "poweradapter",
     "locale",
     "break",
-    "colors"
-  ]
+    "colors",
+  ],
 }
