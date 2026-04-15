@@ -5,6 +5,7 @@ EFI_PART="/dev/"
 ROOT_HOME_PART="/dev/"
 
 clear
+cd
 
 while true; do
     read -sp "Password: " PASS1 && echo
@@ -19,7 +20,7 @@ while true; do
     fi
 done
 
-printf "EFI_PART=$EFI_PART\nPASSWORD=$PASSWORD" > /mnt/variables
+printf "EFI_PART=$EFI_PART\nPASSWORD=$PASSWORD" > variables
 
 fdisk -W always $DISK <<EOF
 g
@@ -55,10 +56,11 @@ while ! pacstrap -K /mnt base linux linux-firmware ; do sleep 1 ; done
 genfstab -U /mnt >> /mnt/etc/fstab
 
 cd
+mv variables /mnt
 mv alekuts-archlinux/chrootaalinux.sh /mnt
 mv alekuts-archlinux/postaalinux.sh /mnt
 
-arch-chroot /mnt bash alekuts-archlinux/chrootaalinux.sh
+arch-chroot /mnt bash chrootaalinux.sh
 
 umount /mnt -l
 reboot
