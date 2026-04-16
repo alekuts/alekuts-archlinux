@@ -5,11 +5,11 @@ while ! sudo pacman -Syu --noconfirm base-devel linux-headers xorg xorg-xinit no
 cd
 while ! git clone https://aur.archlinux.org/yay.git ; do sleep 1 ; done
 cd /home/alekuts/yay
-makepkg -si
+while ! makepkg -si ; do sleep 1 ; done
 cd
-yay -S zen-browser-bin vesktop-bin awesome-git
+while ! yay -S zen-browser-bin vesktop-bin awesome-git ; do sleep 1 ; done
 
-git clone https://github.com/alekuts/alekuts-archlinux
+while ! git clone https://github.com/alekuts/alekuts-archlinux ; do sleep 1 ; done
 
 cp -rf ~/alekuts-archlinux/.config/. /home/alekuts/.config/
 cp -f ~/alekuts-archlinux/.bashrc ~/.bashrc
