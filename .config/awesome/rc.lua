@@ -242,6 +242,10 @@ awful.keyboard.append_global_keybindings({
             awful.spawn.with_shell("xrandr --output DP-0 --mode 1920x1080 --rate 119.93 --rotate normal")
         end,
         { description = "Reset monitor rotation", group = "screen" }),
+    awful.key({ modkey }, "Print", function()
+	    awful.spawn("flameshot gui")
+	end,
+	{ description = "Screenshot", group = "screen" }),
     awful.key({ modkey }, "space", function() toggle_layout() end,
         { description = "lang", group = "keyboard" }),
     awful.key({ modkey, }, "s", hotkeys_popup.show_help,
