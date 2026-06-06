@@ -1,5 +1,5 @@
 #!/bin/bash
-doas printf "PACMAN_AUTH=(doas)" > /etc/makepkg.conf
+doas printf "PACMAN_AUTH=(doas)\n" > /etc/makepkg.conf
 
 while ! doas pacman -Syu --noconfirm base-devel linux-headers go xorg xorg-xinit noto-fonts noto-fonts-emoji noto-fonts-cjk pipewire pipewire-pulse pipewire-alsa pipewire-jack alsa-utils easyeffects lsp-plugins fuse2 libmtp gvfs-mtp thunar thunar-archive-plugin xarchiver 7zip kitty flameshot git steam wine zed fastfetch scrcpy kdenlive pavucontrol qpwgraph obs-studio telegram-desktop reaper duf compsize ntfs-3g btop rofi gammastep lxappearance rofi nvidia-utils mpv sxiv ; do : ; done
 
