@@ -1,11 +1,13 @@
 #!/bin/bash
+doas printf "PACMAN_AUTH=(doas)" > /etc/makepkg.conf
 
-while ! sudo pacman -Syu --noconfirm base-devel linux-headers xorg xorg-xinit noto-fonts noto-fonts-emoji noto-fonts-cjk pipewire pipewire-pulse pipewire-alsa pipewire-jack alsa-utils easyeffects lsp-plugins fuse2 libmtp gvfs-mtp thunar thunar-archive-plugin xarchiver 7zip kitty flameshot git steam wine zed fastfetch scrcpy kdenlive pavucontrol qpwgraph obs-studio telegram-desktop reaper duf compsize ntfs-3g btop rofi gammastep lxappearance rofi nvidia-utils mpv sxiv ; do : ; done
+while ! doas pacman -Syu --noconfirm base-devel linux-headers go xorg xorg-xinit noto-fonts noto-fonts-emoji noto-fonts-cjk pipewire pipewire-pulse pipewire-alsa pipewire-jack alsa-utils easyeffects lsp-plugins fuse2 libmtp gvfs-mtp thunar thunar-archive-plugin xarchiver 7zip kitty flameshot git steam wine zed fastfetch scrcpy kdenlive pavucontrol qpwgraph obs-studio telegram-desktop reaper duf compsize ntfs-3g btop rofi gammastep lxappearance rofi nvidia-utils mpv sxiv ; do : ; done
 
 cd
 while ! git clone https://aur.archlinux.org/yay.git ; do sleep 1 ; done
 cd /home/alekuts/yay
 while ! makepkg -si ; do sleep 1 ; done
+yay --sudo doas --save
 cd
 while ! yay -S zen-browser-bin vesktop-bin awesome-git ; do sleep 1 ; done
 

@@ -7,7 +7,7 @@ while ! (pacman-key --init && pacman-key --populate) ; do sleep 1 ; done
 sed -Ei 's/#(\[multilib\])/\1/' /etc/pacman.conf
 sed -i '/\[multilib\]/ {n;s/#//}' /etc/pacman.conf
 
-while ! pacman -Syu --noconfirm networkmanager sudo neovim grub efibootmgr btrfs-progs ; do sleep 1 ; done
+while ! pacman -Syu --noconfirm networkmanager opendoas neovim grub efibootmgr btrfs-progs ; do sleep 1 ; done
 
 systemctl enable NetworkManager.service
 
@@ -30,7 +30,11 @@ EOF
 echo "root:$PASSWORD" | chpasswd
 useradd -m -G wheel alekuts
 echo "alekuts:$PASSWORD" | chpasswd
-sed -Ei 's/# (%wheel ALL.*ALL\) ALL)/\1/' /etc/sudoers
+
+touch /etc/doas.conf
+printf "permit persist :wheel\n" > /etc/doas.conf
+chown -c root:root /etc/doas.conf
+chmod -c 0400 /etc/doas.conf
 
 printf "zram\n" > /etc/modules-load.d/zram.conf
 printf 'ACTION=="add", KERNEL=="zram0", ATTR{initstate}=="0", ATTR{comp_algorithm}="zstd", ATTR{disksize}="16G", TAG+="systemd"\n' > /etc/udev/rules.d/99-zram.rules
