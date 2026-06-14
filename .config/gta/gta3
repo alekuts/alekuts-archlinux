@@ -1,4 +1,0 @@
-#!/bin/bash
-
-cd $HOME/gta3
-./re3
